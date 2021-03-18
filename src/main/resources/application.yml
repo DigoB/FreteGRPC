@@ -1,3 +1,18 @@
 micronaut:
   application:
     name: calculaFrete
+  server:
+    port: 8085
+
+grpc:
+  server:
+    health:
+      enabled: true
+
+endpoints:
+  all:
+    sensitive: false
+  health:
+    enabled: true
+    sensitive: false
+    details-visible: ANONYMOUS
